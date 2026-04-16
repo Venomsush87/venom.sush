@@ -1,0 +1,24 @@
+<apex:page sidebar="false" setup="false" standardController="Account" showHeader="true" tabstyle="Account">
+    <apex:tabPanel switchType="ajax">
+        <apex:tab label="Account Details" Name="Accounts" >
+            <apex:detail showChatter="true" relatedList="false" inlineEdit="false"/>   
+        </apex:tab>
+       
+        <apex:tab label="Contacts" name="Contacts" >
+            <apex:relatedList list="Contacts" pageSize="4" />            
+        </apex:tab>
+    
+        <apex:tab name="Opportunities" label="Opportunities" >
+            <apex:relatedList list="Opportunities" pageSize="4" />
+        </apex:tab>
+ 
+        <apex:tab name="Cases" label="Cases">
+            <apex:relatedList list="Cases" pageSize="5" />
+        </apex:tab>
+        
+        <apex:tab name="Attachments" label="Attachments">
+            <apex:relatedList list="CombinedAttachments" pageSize="5" />
+        </apex:tab>
+    </apex:tabPanel>
+
+</apex:page>

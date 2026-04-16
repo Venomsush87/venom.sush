@@ -1,0 +1,22 @@
+<aura:component >
+    <aura:attribute name="fName" type="String" />
+    <aura:attribute name="lName" type="String" />
+    <aura:attribute name="age" type="Integer" />
+    
+    <div class="box">
+    <lightning:card title="Student" >    
+        <lightning:input label="First Name" name="fName" placeholder="Enter your first name..." value="{!v.fName}" />
+        <lightning:input label="Last Name" name="lName" placeholder="Enter your Last name..." value="{!v.lName}"  />
+        <lightning:input label="Age" name="age" placeholder="Enter your age in years..." value="{!v.age}" />      
+    
+    	
+        <lightning:button label="Submit" />
+        <lightning:button label="Cancel" /><br/><br/>
+        </lightning:card>
+        </div>
+    First Name	: {!v.fName}<br/>
+    Last Name	: {!v.lName}<br/>
+    Age			: {!v.age}<br/>
+
+    
+</aura:component>

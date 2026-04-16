@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Energy_Customers</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>ACCOUNT.RATING</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>ACCOUNT.OWNERSHIP</columns>
+    <columns>ACCOUNT.SALES</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.PHONE2</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>Active__c</columns>
+    <columns>SOCIAL_PERSONA_FACEBOOK</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.INDUSTRY</field>
+        <operation>equals</operation>
+        <value>Energy</value>
+    </filters>
+    <label>Energy Customers</label>
+</ListView>

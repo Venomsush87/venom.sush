@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Candidature_Status__c</fullName>
+    <label>Candidature Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>Sent for Screening</fullName>
+                <default>false</default>
+                <label>Sent for Screening</label>
+            </value>
+            <value>
+                <fullName>Shortlisted</fullName>
+                <default>false</default>
+                <label>Shortlisted</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Get the Availability</fullName>
+                <default>false</default>
+                <label>Get the Availability</label>
+            </value>
+            <value>
+                <fullName>Schedule Interview</fullName>
+                <default>false</default>
+                <label>Schedule Interview</label>
+            </value>
+            <value>
+                <fullName>HR Round</fullName>
+                <default>false</default>
+                <label>HR Round</label>
+            </value>
+            <value>
+                <fullName>Release the Offer</fullName>
+                <default>false</default>
+                <label>Release the Offer</label>
+            </value>
+            <value>
+                <fullName>Recruited</fullName>
+                <default>false</default>
+                <label>Recruited</label>
+            </value>
+            <value>
+                <fullName>Initiate BGC</fullName>
+                <default>false</default>
+                <label>Initiate BGC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

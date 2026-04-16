@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Billing_and_shipping_City_WF_rule</fullName>
+        <description>Billing and shipping City WF rule</description>
+        <field>BillingCity</field>
+        <formula>BillingCity</formula>
+        <name>Billing and shipping City WF rule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_and_shipping_PO_Code_WF_rule</fullName>
+        <description>Billing and shipping PO Code WF rule</description>
+        <field>ShippingPostalCode</field>
+        <formula>BillingPostalCode</formula>
+        <name>Billing and shipping PO Code WF rule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_and_shipping_Postal_Code_WF</fullName>
+        <description>Billing and shipping Postal Code  WF</description>
+        <field>BillingPostalCode</field>
+        <formula>BillingPostalCode</formula>
+        <name>Billing and shipping Postal Code  WF</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_and_shipping_country_WF_rule</fullName>
+        <description>Billing_and_shipping_country_WF_rule</description>
+        <field>ShippingCountry</field>
+        <formula>BillingCountry</formula>
+        <name>Billing and shipping country WF rule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_and_shipping_state1_WF_rule</fullName>
+        <description>Billing and shipping state WF rule</description>
+        <field>ShippingState</field>
+        <formula>BillingState</formula>
+        <name>Billing and shipping state WF rule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_and_shipping_state_WF_rule</fullName>
+        <field>BillingState</field>
+        <formula>BillingState</formula>
+        <name>Billing and shipping state WF rule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Billing_and_shipping_street_WF_rule</fullName>
+        <description>Billing and shipping address WF rule</description>
+        <field>ShippingStreet</field>
+        <formula>BillingStreet</formula>
+        <name>Billing and shipping street WF rule</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Billing and shipping address WF rule</fullName>
+        <actions>
+            <name>Billing_and_shipping_City_WF_rule</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_and_shipping_PO_Code_WF_rule</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_and_shipping_country_WF_rule</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_and_shipping_state1_WF_rule</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Billing_and_shipping_street_WF_rule</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Both_addresses_are_same__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>Billing and shipping address WF rule</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

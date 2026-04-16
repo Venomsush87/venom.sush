@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_account_description_field</fullName>
+        <description>Update account description field</description>
+        <field>Description</field>
+        <formula>Text (StageName)</formula>
+        <name>Update account description field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>AccountId</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update account description field</fullName>
+        <actions>
+            <name>Update_account_description_field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Update account description field with the opportunity stage name</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

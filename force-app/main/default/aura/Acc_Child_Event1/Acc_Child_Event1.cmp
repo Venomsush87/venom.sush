@@ -1,0 +1,8 @@
+<aura:component controller="Acc_Event1" >
+    <aura:registerEvent name="accName" type="c:DML_Event1" />
+    <div>
+        <lightning:input label="Phone" name="Phone" aura:id="phone" />
+        <lightning:button label="Search" onClick="{!c.search}" />
+        
+    </div>    
+</aura:component>

@@ -1,0 +1,23 @@
+<aura:component controller="SeacrhAcc_Aura">
+    <aura:attribute name="accounts" type="Account" />
+    
+    <lightning:input aura:id="sindustry" label="Industry"/>
+    <lightning:input aura:id="srating" label="Rating"/>
+    <lightning:button label="Search" onclick="{!c.searchData}" /><br/>
+    <div><br/>
+        <div class="databox">
+            <table>
+                <tr>
+                    <td>Name</td><td>Industry</td>
+                    <td>Phone</td><td>Rating</td>
+                </tr>
+                <aura:iteration items="{!v.accounts}" var="a">
+                    <tr>
+                        <td>{!a.Name}</td><td>{!a.Industry}</td>
+                        <td>{!a.Phone}</td><td>{!a.Rating}</td>
+                    </tr>
+                </aura:iteration>
+            </table>    
+        </div>
+    </div>
+</aura:component>

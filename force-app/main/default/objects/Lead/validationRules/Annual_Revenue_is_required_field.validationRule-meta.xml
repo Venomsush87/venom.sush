@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Annual_Revenue_is_required_field</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNULL( AnnualRevenue )</errorConditionFormula>
+    <errorDisplayField>AnnualRevenue</errorDisplayField>
+    <errorMessage>Annual_Revenue_is_required_field</errorMessage>
+</ValidationRule>

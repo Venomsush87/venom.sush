@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Record_URL_for_Slack</fullName>
+        <categories>Slack</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Record URL for Slack</shortDescription>
+        <value>https://venomsush-dev-ed.lightning.force.com/</value>
+    </labels>
+    <labels>
+        <fullName>Welcome_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Welcome Message</shortDescription>
+        <value>Have a Great Day and Make a Great Day ahead.!</value>
+    </labels>
+</CustomLabels>

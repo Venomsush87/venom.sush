@@ -1,0 +1,4 @@
+<aura:component >
+    <aura:registerEvent name="test" type="c:App_Evt_2" />
+    <lightning:button  label="Search" onclick="{!c.callMe}" />
+</aura:component>

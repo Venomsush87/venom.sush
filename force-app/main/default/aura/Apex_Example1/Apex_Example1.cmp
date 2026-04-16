@@ -1,0 +1,5 @@
+<aura:component controller="auraEnabled_1">
+    <aura:attribute name="empName" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.show}"/>
+    Employee Name ={!v.empName} <br/>
+</aura:component>

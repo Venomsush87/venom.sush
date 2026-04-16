@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>The application is used to automate the Human Resource processes.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>Talent Management Lightning</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>standard-Lead</tabs>
+    <tabs>Hiring_Manager__c</tabs>
+    <tabs>Position__c</tabs>
+    <tabs>Candidate__c</tabs>
+    <tabs>Student__c</tabs>
+    <tabs>Teacher__c</tabs>
+    <tabs>Class__c</tabs>
+    <tabs>Styling_in_LWC</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>LWC_Play_with_records</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

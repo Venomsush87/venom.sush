@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_from_New_to_Working</fullName>
+    <active>true</active>
+    <description>Change the Status only from New to working</description>
+    <errorConditionFormula>AND(
+Not ispickval(Status,&apos;Working&apos;),
+ispickval( PRIORVALUE(Status), &apos;New&apos;)
+)</errorConditionFormula>
+    <errorMessage>You can change the status to &apos;Working&apos; only</errorMessage>
+</ValidationRule>

@@ -1,0 +1,29 @@
+<apex:page setup="false" tabstyle="Account" sidebar="false" showHeader="true" controller="SearchAccountsvf" >
+    <apex:sectionHeader title="Search" subtitle="Search Accounts" />
+    
+    <apex:form >
+    
+        <apex:pageBlock title="Search Accounts">
+        
+            <apex:pageBlockSection title="Search Accounts by Name" collapsible="false" columns="4">
+            <apex:inputText label="Enter Account Name" html-placeholder="Enter the Search Text" value="{!searchText}" required="true" />
+            <apex:commandButton value="Search Accounts" action="{!searchMethod}" />
+            </apex:pageBlockSection>   
+            
+            </apex:pageBlock>
+             
+            <apex:pageBlock title="Search Results : ({!lstAcc.size})" >
+                
+                <apex:pageBlockTable value="{!lstAcc}" var="ac">
+                    <apex:column value="{!ac.name}" />
+                    <apex:column value="{!ac.site}" />
+                    <apex:column value="{!ac.industry}"/>
+                    <apex:column value="{!ac.phone}" />
+                    <apex:column value="{!ac.rating}" />
+                    <apex:column value="{!ac.type}" />
+                </apex:pageBlockTable>
+                                        
+         
+        </apex:pageBlock>  
+    </apex:form>
+</apex:page>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A_months_Notice_for_Belagavi</fullName>
+    <active>true</active>
+    <description>1 month notice for Belagavi region</description>
+    <errorConditionFormula>AND(
+       ISPICKVAL( Location__c ,&apos;Belagavi&apos;) ,
+      NOT ISPICKVAL( Notice_Period__c,&apos;1 Month&apos; )
+)</errorConditionFormula>
+    <errorDisplayField>Notice_Period__c</errorDisplayField>
+    <errorMessage>The notice period for &apos;Belagavi&apos; location is &apos;1 Month&apos;</errorMessage>
+</ValidationRule>

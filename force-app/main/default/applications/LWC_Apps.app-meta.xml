@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>This contains all the LWC practice apps</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>LWC Apps</label>
+    <navType>Standard</navType>
+    <tabs>LWC_Play_with_records</tabs>
+    <tabs>Styling_in_LWC</tabs>
+    <tabs>Lightning_Messaging_Service_LMS</tabs>
+    <tabs>LWC_With_Apex_Classes</tabs>
+    <tabs>Navigation</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>LWC_Apps_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,12 @@
+<aura:component controller="SrchAcc_dataTable">
+    <aura:attribute name="accounts" type="list"  />
+    <aura:attribute name="columns" type="object" />
+    <div>
+        <lightning:input label="Industry" aur:id="indus" placeholder="Enter the Industry to search Contacts.." />
+        <lightning:button label="Submit" onclick="{!c.show}" />
+        <br/><br/><br/>
+        
+        <lightning:dataTable keyField="id" data="{!v.accounts}" columns="{!v.columns}" hideCheckboxColumn="true"/>      	
+        
+    </div>
+</aura:component>

@@ -1,0 +1,7 @@
+<apex:page controller="XML_Ex3">
+   	<apex:form >
+        <apex:inputtext value="{!searchText}"/>
+        <apex:commandButton value="Search" action="{!invoke}" reRender="one"/>
+        <apex:outputLabel value="{!result}" id="one"/>
+    </apex:form>
+</apex:page>

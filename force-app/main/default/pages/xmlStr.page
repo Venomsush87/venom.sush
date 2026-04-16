@@ -1,0 +1,3 @@
+<apex:page controller="xmlEx_5">
+    {!xmlStr}
+</apex:page>

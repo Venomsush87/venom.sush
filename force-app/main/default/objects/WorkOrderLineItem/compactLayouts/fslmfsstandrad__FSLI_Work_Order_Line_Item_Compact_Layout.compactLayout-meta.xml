@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fslmfsstandrad__FSLI_Work_Order_Line_Item_Compact_Layout</fullName>
+    <fields>Subject</fields>
+    <fields>Status</fields>
+    <fields>AssetId</fields>
+    <fields>PricebookEntryId</fields>
+    <label>FSLI Work Order Line Item Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,8 @@
+<apex:page controller="Http_Ex_1">
+    <apex:form >
+        <apex:inputText size="100" value="{!endPoint}"/>
+        <apex:commandButton value="Submit" action="{!call}" reRender="One"/>
+        <br/><br/><br/>
+        <apex:inputTextArea rows="10" cols="50" value="{!body}" id="One" />
+    </apex:form>
+</apex:page>

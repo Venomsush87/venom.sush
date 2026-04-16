@@ -1,0 +1,20 @@
+<apex:page sidebar="false" setup="false" tabstyle="Lead" controller="BMICalculator" showHeader="true">
+    <apex:sectionHeader title="BMI Calculator" />
+        <apex:form >
+        
+            <apex:pagemessages id="info">
+            </apex:pagemessages>
+            <Apex:PageBlock title="Calci" >
+                <apex:pageBlockButtons location="bottom" >
+                    <apex:commandButton value="Calculate" action="{!calBmi}" reRender="res, info" />
+                </apex:pageBlockButtons>
+                
+                <apex:pageBlockSection columns="1" >
+                    <apex:inputtext label="Height (in cms)" value="{!height}" required="true"/>
+                    <apex:inputtext label="Weight (in Kgs)" value="{!weight}" required="true"/>
+                    <apex:outputLabel id="res">BMI : {!bmi}</apex:outputLabel>
+                                        
+                </apex:pageBlockSection>
+            </Apex:PageBlock>
+        </apex:form>  
+</apex:page>

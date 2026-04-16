@@ -1,0 +1,7 @@
+<aura:component controller="Acc_Event1">
+    <aura:handler name="accName" event="c:First_Ex_Evt" action="{!c.invoke}" />
+    <lightning:input label="Last Name" aura:id="lname" />
+    <lightning:input label="First Name" aura:id="fname" />
+    
+    <c:First_Evt_Child_Comp />
+</aura:component>

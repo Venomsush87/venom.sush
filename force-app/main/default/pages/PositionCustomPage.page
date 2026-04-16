@@ -1,0 +1,48 @@
+<apex:page setup="false" sidebar="false" showHeader="true" tabstyle="Case" standardController="Position__c">
+    <apex:detail showChatter="true" inlineEdit="true" relatedList="false" title="true" />
+    <apex:sectionHeader title="Position Edit" subtitle="New Position" />
+        <Apex:form >
+            <Apex:pageBlock title="Personal Detail">
+                <apex:pageBlockButtons location="both">
+                    <apex:commandButton value="Save" action="{!Save}"/>
+                    <apex:commandButton value="Cancel" action="{!Cancel}"/>
+                </apex:pageBlockButtons>
+                
+                <apex:pageBlockSection title="Information" collapsible="true" columns="2" >
+                    <apex:inputfield value="{!Position__c.Name}" />
+                    <apex:inputfield value="{!Position__c.Location__c}" />
+                    <apex:inputfield value="{!Position__c.Number_of_Positions__c}" />
+                    <apex:inputfield value="{!Position__c.Position_Status__c}" />
+                    <apex:inputfield value="{!Position__c.HR_Email__c}" />
+                    <apex:inputfield value="{!Position__c.HR_Contact__c}" />
+                    <apex:inputfield value="{!Position__c.Hiring_Manager__c}" />
+                       
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Position Description" collapsible="true" columns="1" >
+                    <apex:inputField value="{!Position__c.Position_Description__c}"/>
+                    <apex:inputField value="{!Position__c.Skills_Required__c}"/>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Compensation Details" collapsible="true" columns="2" >
+                    <apex:inputField value="{!Position__c.Max_Pay__c}"/>
+                    <apex:inputField value="{!Position__c.Min_Pay__c}"/>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Milestone Details" collapsible="true" columns="2" >
+                    <apex:inputField value="{!Position__c.Open_Date__c}"/>
+                    <apex:inputField value="{!Position__c.Close_Date__c}"/>
+                </apex:pageBlockSection>
+                
+                <apex:pageBlockSection title="Additional Information" collapsible="true" columns="2" >
+                    <apex:inputField value="{!Position__c.Travel_Required__c}"/>
+                    <apex:inputField value="{!Position__c.Passport_Required_del__c}"/>
+                </apex:pageBlockSection>
+               
+                <apex:pageBlockSection title="System Information" collapsible="true" columns="2" >
+                    <apex:inputField value="{!Position__c.CreatedById}"/>
+                    <apex:inputField value="{!Position__c.LastModifiedById}"/>
+                </apex:pageBlockSection>
+            </Apex:pageBlock>
+        </Apex:form>
+</apex:page>

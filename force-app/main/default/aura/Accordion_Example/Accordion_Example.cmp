@@ -1,0 +1,21 @@
+<aura:component >
+    <lightning:accordion>
+    	<lightning:accordionSection  label="Account Details" name="a">
+            Account Name : <br/>
+            Account Industry : <br/>
+            Account Phone : <br/>
+        </lightning:accordionSection>
+        
+        <lightning:accordionSection label="Personal Details" name="b">
+            Account Name : <br/>
+            Account Industry : <br/>
+            Account Phone : <br/>
+        </lightning:accordionSection>
+        
+        <lightning:accordionSection label="Address Details" name="c">
+            Account Name : <br/>
+            Account Industry : <br/>
+            Account Phone : <br/>
+        </lightning:accordionSection>
+    </lightning:accordion>    
+</aura:component>

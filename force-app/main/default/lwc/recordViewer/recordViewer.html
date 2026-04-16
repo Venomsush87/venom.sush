@@ -1,0 +1,62 @@
+<template>
+    <lightning-card title="Record Viewer">
+        <div class="slds-m-around_medium">
+            <lightning-combobox
+                label="Select Object"
+                value={objectType}
+                options={options}
+                onchange={handleChange}>
+            </lightning-combobox>
+
+            <lightning-button class="slds-m-top_small" label="Submit" onclick={handleSearch}></lightning-button>
+        </div>
+
+        <template if:true={records}>
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer slds-m-top_medium">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Last Modified</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={records} for:item="rec">
+                        <tr key={rec.Id}>
+                            <td>
+                                <template if:true={rec.hasAccess}>
+                                    <a href="javascript:void(0);" data-id={rec.Id} onclick={toggleRow}>
+                                        {rec.Name}
+                                    </a>
+                                </template>
+                                <template if:false={rec.hasAccess}>
+                                    <lightning-icon icon-name="utility:lock" size="x-small"></lightning-icon>
+                                    {rec.Name}
+                                </template>
+                            </td>
+                            <td>{rec.LastModifiedDate}</td>
+                        </tr>
+
+                        <template if:true={expandedRecordId}>
+                            <template if:true={rec.hasAccess}>
+                                 <tr key={rec.Id}>
+                                    <td colspan="2">
+                                        <div class="slds-box slds-theme_default">
+                                            <p><b>Owner:</b> {rec.OwnerName}</p>
+                                            <p><b>Created By:</b> {rec.CreatedByName}</p>
+                                            <p><b>Last Modified By:</b> {rec.LastModifiedByName}</p>
+                                            <p><b>Created Date:</b> {rec.CreatedDate}</p>
+                                            <p><b>Last Modified Date:</b> {rec.LastModifiedDate}</p>
+                                            <template if:true={rec.Website}><p><b>Website:</b> {rec.Website}</p></template>
+                                            <template if:true={rec.Phone}><p><b>Phone:</b> {rec.Phone}</p></template>
+                                            <template if:true={rec.Amount}><p><b>Amount:</b> {rec.Amount}</p></template>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </template>
+                    </template>
+                </tbody>
+            </table>
+        </template>
+    </lightning-card>
+</template>

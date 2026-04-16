@@ -1,0 +1,22 @@
+<apex:page controller="Http_Ex_2_PinCodeAsgnmnt">
+    <apex:sectionHeader title="Account" subtitle="New Account" help="/apex/page"/>
+    <apex:form >
+        <apex:pageMessages />
+        <apex:pageBlock >
+        	<apex:pageBlockButtons location="top">
+                <apex:commandButton value="Create" action="{!invoke}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection >
+            	<apex:inputField value="{!acc.Name}"/>
+                <apex:inputField value="{!acc.Rating}"/>
+                <apex:inputField value="{!acc.Phone}"/>
+                <apex:inputField value="{!acc.PAN_No__c}"/>
+                <apex:inputField value="{!acc.Active__c}"/>
+                <apex:inputField value="{!acc.Type}"/>
+                <apex:inputField value="{!acc.Site}"/>
+                <apex:inputField value="{!acc.Pin_Code__c}"/>
+                <apex:inputField value="{!acc.Places__c}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form> 
+</apex:page>

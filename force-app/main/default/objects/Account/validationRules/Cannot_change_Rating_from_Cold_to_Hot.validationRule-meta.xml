@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_change_Rating_from_Cold_to_Hot</fullName>
+    <active>false</active>
+    <description>Cannot change Rating from Cold to Hot</description>
+    <errorConditionFormula>AND(
+     ispickval(Rating,&apos;Hot&apos;),
+     ispickval( PRIORVALUE(Rating), &apos;Cold&apos;)
+)</errorConditionFormula>
+    <errorDisplayField>Rating</errorDisplayField>
+    <errorMessage>Cannot change Rating from Cold to Hot</errorMessage>
+</ValidationRule>

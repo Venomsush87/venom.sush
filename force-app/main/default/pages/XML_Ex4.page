@@ -1,0 +1,14 @@
+<apex:page controller="XML_Ex4" >
+	<apex:form >
+        <apex:pageBlock >
+            <apex:panelGrid columns="3">
+            	<apex:panelGrid columns="1">
+            		<apex:inputTextArea rows="10" cols="50" value="{!xmlString}"/>
+                    <br/><br/>
+                    <apex:commandButton value="Convert" action="{!convert}" />
+            	</apex:panelGrid>
+                <apex:inputTextarea rows="10" cols="50" value="{!result}" />
+            </apex:panelGrid>	
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

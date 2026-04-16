@@ -1,0 +1,5 @@
+<aura:component >
+    <c:App_Evt_Child_One_2 />
+    <c:App_Evt_Child_Two_2 />
+    <c:App_Evt_Child_Three_2 />
+</aura:component>

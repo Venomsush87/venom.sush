@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Grant_access_on_record_to_Hyderabad_PG</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Read</opportunityAccessLevel>
+        </accountSettings>
+        <description>Grant access on record to Hyderabad PG</description>
+        <label>Grant access on record to Hyderabad PG</label>
+        <sharedTo>
+            <group>Hyderabad_Sales_group</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>Active__c</field>
+            <operation>equals</operation>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Industry</field>
+            <operation>equals</operation>
+            <value>Banking</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Rating</field>
+            <operation>equals</operation>
+            <value>Hot</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Ownership</field>
+            <operation>equals</operation>
+            <value>Public</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

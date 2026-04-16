@@ -1,0 +1,6 @@
+<aura:component controller="Acc_Event1" >
+    <aura:handler name="accName" event="c:DML_Event1" action="{!c.invoke}" />
+    <lightning:input label="First Name" aura:id="lname" />
+    <lightning:input label="Last Name" aura:id="fname" />
+    <c:Acc_Child_Event1 />
+</aura:component>

@@ -1,0 +1,8 @@
+<apex:page standardController="Position__c" showHeader="true" setup="false" sidebar="false" tabStyle="case">
+        <apex:detail inlineEdit="true" relatedList="true" showChatter="true" />
+        <apex:relatedList list="Openactivities" pageSize="10" />
+        <apex:relatedList list="activityhistories" pageSize="5" />
+        <apex:relatedList list="combinedattachments" pageSize="4" />
+        <apex:relatedList list="Candidates__r" pageSize="4" />
+  
+</apex:page>

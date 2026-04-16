@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Make_AccountSite_Field_Required</fullName>
+    <active>false</active>
+    <description>This rule is used to make AccountSite field required</description>
+    <errorConditionFormula>ISBLANK( Site )</errorConditionFormula>
+    <errorMessage>Please enter  &apos;Account Site&apos; value</errorMessage>
+</ValidationRule>

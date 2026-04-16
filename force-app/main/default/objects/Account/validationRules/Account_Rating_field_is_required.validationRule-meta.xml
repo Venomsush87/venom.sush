@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Rating_field_is_required</fullName>
+    <active>false</active>
+    <description>Account Rating field is required</description>
+    <errorConditionFormula>ISBLANK( TEXT(  Type ) )</errorConditionFormula>
+    <errorDisplayField>Type</errorDisplayField>
+    <errorMessage>Please select Type for the customer</errorMessage>
+</ValidationRule>

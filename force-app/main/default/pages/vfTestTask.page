@@ -1,0 +1,20 @@
+<apex:page sidebar="false" setup="false" tabstyle="Lead" controller="AC_vfPageTestTask" showHeader="true">
+    <apex:sectionHeader title="Demo Page" />
+        <apex:form >
+        
+            <apex:pagemessages id="info">
+            </apex:pagemessages>
+            <Apex:PageBlock title="Person Information" >
+                <apex:pageBlockButtons location="bottom" >
+                    <apex:commandButton value="Save" action="{!calBmi}" reRender="res, info" />
+                </apex:pageBlockButtons>
+                
+                <apex:pageBlockSection columns="1" >
+                    <apex:inputtext label="First Name" value="{!height}" required="true"/>
+                    <apex:inputtext label="Last Name" value="{!weight}" required="true"/>
+                    <apex:outputLabel id="res">BMI : {!bmi}</apex:outputLabel>
+                                        
+                </apex:pageBlockSection>
+            </Apex:PageBlock>
+        </apex:form>  
+</apex:page>
