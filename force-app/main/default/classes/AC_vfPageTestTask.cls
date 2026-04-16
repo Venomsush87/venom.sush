@@ -1,3 +1,4 @@
+// This is a test class for the AC_vfPageTestTask Visualforce page.
 public class AC_vfPageTestTask {
     
     public String height{get;set;}
